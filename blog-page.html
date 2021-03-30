@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Страница блога</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/main.min.css">
+    <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/fonts/fonts.css">
+    <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/swiper-bundle.min.css">
+    <link rel="icon" href="#!" type="image/x-icon">
+    <link rel="shortcut icon" href="wp-content/themes/twentytwenty-child/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#!">
+  </head>
+  <body>
+    <header class="header">
+      <!-- LOGO-->
+      <div class="logo"><a href="index.html"><img src="wp-content/themes/twentytwenty-child/img/icons/logo.svg" alt="logo">
+          <p>Частный психолог</p></a></div>
+      <!---->
+      <div class="header__top glav__header">
+        <div class="contacts contacts-mn"><a href="tel:+78001201204">+ 7 800 120-12-04</a>
+          <p> Ежедневно с 10 до 20 ч.</p>
+        </div>
+        <div class="adress__mn addres"><a href="contacts.html#map">пр. Ленина, д.45, оф. 15</a>
+          <p>Москва, м. Московская</p>
+        </div>
+        <button class="btn show-modal-1 btn-mn" data-toggle="modal-1"> <span>Обратный звонок </span></button>
+      </div>
+      <!-- hamburger HEADER-->
+      <div class="hamburger-menu hamburger">
+        <input id="menu__toggle" type="checkbox">
+        <label class="menu__btn" for="menu__toggle"><span></span></label>
+        <div class="menu__box header__menu hamburger__menu-box">
+          <!-- HEADER MENU LIST-->
+          <ul class="menu__list hamburger__menu-list">
+            <li><a href="about-me.html">Обо мне</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <!---->
+          </ul>
+          <!-- ADDRESS hamburger-->
+          <div class="hamburger__addres addres"><a href="contacts.html#map">пр. Ленина, д.45, оф. 15</a>
+            <p>Москва, м. Московская</p>
+          </div>
+          <!-- CONTACTS hamburger-->
+          <div class="contacts hamburger__contacts"><a href="tel:+78001201204">+ 7 800 120-12-04</a>
+            <p> Ежедневно с 10 до 20 ч.</p>
+          </div>
+          <!-- Button to open the modal window in the hamburger menu-->
+          <button class="btn show-modal-1" data-toggle="modal-1"> <span>Обратный звонок </span></button>
+          <!-- MODAL hamburger-->
+        </div>
+      </div>
+    </header>
+    <!-- Psychotherapy-->
+    <section class="section__blogPage sect">
+      <div class="wraper container__blogPage">
+        <p class="min-text__text min-text__color blogPage__min-text">Психотерапия</p>
+        <h1 class="text-center indivConsul__title">Как проходят консультации психолога?</h1>
+        <p class="texts blogPage__text">
+          Психолог создает опоры,чтобы человек мог пройти путь
+          от знакомого и известного - переживания проблемы,
+          к новому - знаниям о решении проблемы.
+        </p>
+      </div>
+    </section>
+    <!--END  Psychotherapy-->
+    <!-- Separate the person from the problem-->
+    <section class="blogPage">
+      <div class="blogPage__containers">
+        <div class="blogPage__box">
+          <h2 class="titles blogPage__titles">Отделить человека от проблемы</h2>
+          <p class="blogPage__txt">Важно ощущение комфорта и свободы, чтобы консультация прошла с пользой для человека. Для этого психолог создает атмосферу уважения, сотрудничества, заботы и веры в способности человека.</p>
+          <p class="blogPage__txt">В начале консультации психолог строит беседу таким образом, что бы совместно с человеком выяснить, что его беспокоит, что вызывает страдание. Затем консультант и человек подбирают название, того что беспокоит, дают проблеме имя. Например, проблема может получить имя Апатия.</p>
+          <p class="blogPage__txts">
+            Психолог вместе с клиентом исследуют как Апатия возникла его жизни, какими «стратегиями» и «тактиками» она пользуются, что бы захватить его жизнь, какие факторы поддерживают существование проблемы, когда Апатия может проявить свою силу, а когда апатии не удается подчинить себе человека.При помощи этого исследования проблема «отделяется» от личности человека.</p>
+          <div class="picture blogPage__picture"><img src="wp-content/themes/twentytwenty-child/img/blogPage2.jpg" alt="Консультация"></div>
+        </div>
+        <!-- article-->
+        <article class="article blogPage__article">
+          <div class="picture article__picture"><img src="wp-content/themes/twentytwenty-child/img/article.jpg" alt="Елена Иванова"></div>
+          <p class="article__txt">Елена Иванова</p>
+          <p class="article__text">
+            Психолог, нарративный консультант,специалист по эмоциональному благополучию</p><a class="btn article__btn" href="#openModalThree"> <span>Связаться с психологом</span></a>
+          <div class="modal" id="openModalThree">
+            <div class="modal-dialog">
+              <div class="content-modal">
+                <div class="modal-header"><a class="close" href="#close" title="Close">x</a></div>
+                <form class="form form__modal form__header-modal">
+                  <h2 class="mainText mainText-modal">Связаться с психологом</h2>
+                  <p class="secondText form__header-text">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>
+                  <div class="formInput__recording">
+                    <input class="form__input-style form__input-block" type="text" name="name" placeholder="Ваше имя" required="required">
+                    <input class="form__input-style form__input-block" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required"><a class="btn__width form__header-btn" href="#recordingTwo"> <span>Записаться на приём</span></a>
+                  </div>
+                  <div class="form__policy form__header-policy">
+                    <input class="form__checkbox" id="form__checkboxThree" type="checkbox" checked="">
+                    <label class="form__pol" for="form__checkboxThree"> <span class="modal__policy-link">Вы соглашаетесь с <a class="form__policy-link" href="#!">условиями обработки персональных данных</a></span></label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- END article-->
+      </div>
+      <div class="blogPage__container">
+        <h2 class="titles blogPage__titles">Отделить человека от проблемы</h2>
+        <p class="blogPage__txt">Важно ощущение комфорта и свободы, чтобы консультация прошла с пользой для человека. Для этого психолог создает атмосферу уважения, сотрудничества, заботы и веры в способности человека.</p>
+        <p class="blogPage__txt">В начале консультации психолог строит беседу таким образом, что бы совместно с человеком выяснить, что его беспокоит, что вызывает страдание. Затем консультант и человек подбирают название, того что беспокоит, дают проблеме имя. Например, проблема может получить имя Апатия.</p>
+        <p class="blogPage__txts">
+          Психолог вместе с клиентом исследуют как Апатия возникла его жизни, какими «стратегиями» и «тактиками» она пользуются, что бы захватить его жизнь, какие факторы поддерживают существование проблемы, когда Апатия может проявить свою силу, а когда апатии не удается подчинить себе человека.При помощи этого исследования проблема «отделяется» от личности человека.</p>
+        <div class="picture blogPage__picture"><img src="wp-content/themes/twentytwenty-child/img/blogPage2.jpg" alt="Консультация"></div>
+        <h2 class="titles blogPage__titles">Отделить человека от проблемы</h2>
+        <p class="blogPage__txt">Важно ощущение комфорта и свободы, чтобы консультация прошла с пользой для человека. Для этого психолог создает атмосферу уважения, сотрудничества, заботы и веры в способности человека.</p>
+        <p class="blogPage__txt">В начале консультации психолог строит беседу таким образом, что бы совместно с человеком выяснить, что его беспокоит, что вызывает страдание. Затем консультант и человек подбирают название, того что беспокоит, дают проблеме имя. Например, проблема может получить имя Апатия.</p>
+        <p class="blogPage__txts">
+          Психолог вместе с клиентом исследуют как Апатия возникла его жизни, какими «стратегиями» и «тактиками» она пользуются, что бы захватить его жизнь, какие факторы поддерживают существование проблемы, когда Апатия может проявить свою силу, а когда апатии не удается подчинить себе человека.При помощи этого исследования проблема «отделяется» от личности человека.</p>
+      </div>
+    </section>
+    <!-- END Separate the person from the problem-->
+    <!-- FORM -->
+    <section class="sectionEight">
+      <div class="container">
+        <div class="form-box">
+          <form class="form">
+            <h5 class="form__title">Запись на приём</h5>
+            <p>Заполните форму и я перезвоню вам для уточнения удобного для вас времени</p>
+            <div class="box-input">
+              <input type="text" name="name" placeholder="Ваше имя" required="required">
+              <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">
+              <button><span>Запись на консультацию</span></button>
+            </div>
+            <div class="form__policy">
+              <input id="form2" type="checkbox" checked="">
+              <label for="form2">Вы соглашаетесь с <a href="#!" target="_blank">условиями обработки персональных данных</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END FORM -->
+    <!-- Psychologist's blog-->
+    <section class="sectionNine sect">
+      <div class="cont">
+        <div class="text-bgc">
+          <p>Блог психолога</p>
+        </div>
+        <h2>Полезные статьи</h2>
+        <div class="blog-slider swiper-container">
+          <div class="swiper-wrapper reviews__swiper-wrapper">
+            <div class="swiper-slide swiper__blog">
+              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/imgFive.jpg" alt="Мужчина"></div>
+              <div class="text-bgc">
+                <p>О приёме</p>
+              </div>
+              <h3>Как проходят консультации психолога</h3>
+              <p>
+                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p><a href="blog-page.html"><span>Читать далее</span></a>
+            </div>
+            <div class="swiper-slide swiper__blog">
+              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/adventigeFour.jpg" alt="Консультация"></div>
+              <div class="text-bgc">
+                <p>Психотерапия</p>
+              </div>
+              <h3>Что такое нарративная, терапия нарративный подход</h3>
+              <p>
+                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p><a href="blog-page.html"><span>Читать далее</span></a>
+            </div>
+            <div class="swiper-slide swiper__blog">
+              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/adventigeTwo.jpg" alt="Девушка"></div>
+              <div class="text-bgc">
+                <p>Детская психология</p>
+              </div>
+              <h3>Как помочь ребенку преодолеть капризы и истерики</h3>
+              <p>
+                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p><a href="blog-page.html"><span>Читать далее</span></a>
+            </div>
+          </div>
+        </div><a href="blog.html"> <span>Смотреть все статьи</span></a>
+      </div>
+    </section>
+    <!-- END Psychologist's blog-->
+    <!-- FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top-content">
+          <ul class="footer__menu-list">
+            <li><a href="family-psych.html">Семейная консультация</a></li>
+            <li><a href="online-consul.html">Онлайн-консультация</a></li>
+            <li><a href="indiv-consul.html">Индивидуальные консультации</a></li>
+            <li><a href="child-psych.html">Детский психолог</a></li>
+          </ul>
+          <div class="contacts"><a href="tel:+78001201204">+ 7 800 120-12-04</a>
+            <p> Ежедневно с 10 до 20 ч.</p>
+          </div>
+          <button class="btn show-modal-1" data-toggle="modal-1"> <span>Обратный звонок </span></button>
+        </div>
+        <ul class="menu__list-footer">
+          <li><a href="about-me.html">Обо мне</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="price.html">Цены</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube"></a></li>
+          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram"></a></li>
+          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk"></a></li>
+        </ul>
+        <div class="policy__footer">
+          <p><a href="" target="_blank">Политика конфиденциальности сайта</a></p>
+          <p><a href="" target="_blank">Разработка сайта</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER-->
+    <script src="./wp-content/themes/twentytwenty-child/js/swiper-bundle.min.js"></script>
+    <script src="./wp-content/themes/twentytwenty-child/js/fslightbox.js"></script>
+    <script src="./wp-content/themes/twentytwenty-child/js/main.js"></script>
+  </body>
+</html>
