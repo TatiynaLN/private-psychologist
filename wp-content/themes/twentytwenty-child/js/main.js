@@ -45,7 +45,7 @@ function $modal(options) {
   function _createModal(options) {
     var elemModal = document.createElement('div'),
         //  data-dismiss="modal"
-    modalTemplate = '<div class="modal__backdrop"><div class="modal__body" data-modal="content"><span class="modal__btn-close" data-dismiss="modal" title="Закрыть">×</span>{{content}}</div>{{footer}}</div>',
+    modalTemplate = '<div class="modal__backdrop" data-dismiss="modal"><div class="modal__body" data-modal="content"><span class="modal__btn-close" data-dismiss="modal" title="Закрыть">×</span>{{content}}</div>{{footer}}</div>',
         modalFooterTemplate = '<div class="modal__footer">{{buttons}}</div>',
         modalButtonTemplate = '<button type="button" class="{{button_class}}" data-handler={{button_handler}}>{{button_text}}</button>',
         modalHTML,
@@ -157,7 +157,7 @@ function $modal(options) {
   }); // создадим модальное окно 3
 
   var modal3 = $modal({
-    content: '<h5>Запись на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
+    content: '<h5>Записаться на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
         <form><div class="input-flex">\
                     <input type="text" name="name" placeholder="Ваше имя" required="required">\
                     <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
@@ -218,6 +218,12 @@ function $modal(options) {
   });
   window.addEventListener('click', function (e) {
     if (e.target.classList.contains('modal__btn-close')) {
+      panel.classList.remove('oh');
+    }
+  });
+  window.addEventListener('click', function (e) {
+    if (e.target.dataset.dismiss === 'modal') {
+      // этот кусок кода
       panel.classList.remove('oh');
     }
   });
