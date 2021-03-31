@@ -20,7 +20,7 @@
       <div class="logo"><a href="index.html"><img src="wp-content/themes/twentytwenty-child/img/icons/logo.svg" alt="logo">
           <p>Частный психолог</p></a></div>
       <!---->
-      <div class="header__top glav__header">
+      <div class="header__top">
         <div class="contacts contacts-mn"><a href="tel:+78001201204">+ 7 800 120-12-04</a>
           <p> Ежедневно с 10 до 20 ч.</p>
         </div>
@@ -59,89 +59,124 @@
       </div>
     </header>
     <!-- Online psychological consultation-->
-    <section class="section__indivConsul indivConsul sect">
-      <div class="wraper container__online cnt-consul">
-        <h1 class="text-center indivConsul__title">Консультация психолога онлайн</h1>
-        <p class="indivConsul__text texts">
-          Помогаю справляться с негативными эмоциями, находить источник спокойствияи силы в себе, развивать предпочитаемые направления жизни, поддерживать
-          эмоциональную устойчивость.
-        </p><a class="btn article__btn" href="#openModalThree"> <span>Записаться на приём</span></a>
-        <div class="modal" id="openModalThree">
-          <div class="modal-dialog">
-            <div class="content-modal">
-              <div class="modal-header"><a class="close" href="#close" title="Close">x</a></div>
-              <form class="form form__modal form__header-modal">
-                <h2 class="mainText mainText-modal">Записаться на приём</h2>
-                <p class="secondText form__header-text">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>
-                <div class="formInput__recording">
-                  <input class="form__input-style form__input-block" type="text" name="name" placeholder="Ваше имя" required="required">
-                  <input class="form__input-style form__input-block" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required"><a class="btn__width form__consul-btn" href="#recordingTwo"> <span>Записаться на приём</span></a>
-                </div>
-                <div class="form__policy form__header-policy">
-                  <input class="form__checkbox" id="form__checkboxThree" type="checkbox" checked="">
-                  <label class="form__pol" for="form__checkboxThree"> <span class="modal__policy-link">Вы соглашаетесь с <a class="form__policy-link" href="#!">условиями обработки персональных данных</a></span></label>
-                </div>
-              </form>
-            </div>
+    <section class="section__indivConsul">
+      <div class="container">
+        <div class="bg bg__onlineConsul">
+          <div class="cnt">
+            <h1 class="title">Консультация психолога онлайн</h1>
+            <h6 class="sub-title">
+              Помогаю справляться с негативными эмоциями, находить источник спокойствияи силы в себе, развивать предпочитаемые направления жизни, поддерживать
+              эмоциональную устойчивость.
+            </h6>
+            <button class="btn show-modal-3" data-toggle="modal-3"> <span>Записаться на приём</span></button>
           </div>
         </div>
       </div>
     </section>
     <!-- END Online psychological consultation-->
     <!-- When you need to consult a psychologist on Skype-->
-    <section>
-      <div class="about width about-indent">
-        <div class="about__content about__content-width">
-          <p class="min-text__text min-text__color about__text">Отзывы обо мне</p>
-          <h2 class="titles titles-indent onlineConsul-titles">Когда нужна консультация психолога по скайпу?</h2>
-          <p class="txt-indent">Если вы переживаете тяжелые моменты в жизни, испытываете тревогу, стресс, душевное волнение, вас беспокоят страхи, проблемы в отношениях, сложности в семье или на работе, но вы пока не решаетесь посетить психолога лично, или там где вы живете не нашли хороших специалистов – вам поможет консультация психолога по скайпу.</p>
+    <section class="section__one">
+      <div class="container">
+        <div class="about">
+          <div class="about__content">
+            <div class="text-bgc">
+              <p>Отзывы обо мне</p>
+            </div>
+            <h2> Когда нужна консультация психолога по скайпу?</h2>
+            <p>
+              Если вы переживаете тяжелые моменты в жизни, испытываете тревогу, стресс, душевное волнение, 
+              вас беспокоят страхи, проблемы в отношениях, 
+              сложности в семье или на работе, но вы пока не 
+              решаетесь посетить психолога лично, или там где 
+              вы живете не нашли хороших специалистов – вам поможет 
+              консультация психолога по скайпу.
+            </p>
+          </div>
+          <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/female.jpg" alt="Евгения Иванова"></div>
         </div>
-        <div class="picture picture__width picture__indent picture__about"><img src="wp-content/themes/twentytwenty-child/img/female.jpg" alt="Евгения Иванова"></div>
       </div>
     </section>
     <!-- END When you need to consult a psychologist on Skype-->
     <!-- Advantages-->
-    <section class="occasion section__indivConsul">
-      <div class="width advantage advantage__indent">
-        <p class="min-text__text min-text__color advantage__text">Преимущества</p>
-        <h2 class="titles advantage__titl text-center">Преимущества консультация психолога онлайн</h2>
+    <section class="occasion sect__occasion">
+      <div class="container">
+        <div class="text-bgc">
+          <p>Преимущества</p>
+        </div>
+        <h2>Преимущества консультация психолога онлайн</h2>
+        <ul class="occasion__block occasion__box">
+          <li>
+            <h3>Анонимность и конфиденциальность</h3>Многие люди не ходят к психологу из-за стеснительности
+            и потому что испытывают стыд и тревогу, когда нужно 
+            рассказывать о некоторых событиях из своей жизни во 
+            время личной встречи. Анонимность онлайн беседы с 
+            психологом ослабляет стыд и тревогу, помогает говорить 
+            более открыто, не скрывая деталей. Это делает консультацию более эффективной.
+            Консультация психолога по скайпу позволяет сохранить 
+            больший уровень конфиденциальности, чем при личной терапии, 
+            так как, по вашему желанию, психолог может не видеть вас, 
+            а слышать только голос, называть вас по вымышленному имени.
+          </li>
+          <li>
+            <h3>Качество и профессионализм</h3>Через интернет мы можете найти профессионального психолога, 
+            который имеет высокий уровень образования, богатый практический 
+            опыт и использует современные и эффективные методы работы. 
+            Если вы живете в городе, где сложно найти хорошего психолога, 
+            консультация онлайн дает возможность получить профессиональную и 
+            качественную психологическую помощь.
+          </li>
+          <li>
+            <h3>Комфорт и удобство</h3>Общение с психологом через Интернет предлагает людям наибольшую 
+            степень комфорта и удобства. Вы можете консультироваться у психолога 
+            в удобное для вас время, и в комфортном для вас месте. 
+            Не тратя время на дорогу, без ожидания из любого места России или мира.
+            Выбирайте удобный для себя способ общения с психологом. 
+            Это может быть разговор, чат с использованием программы скайп, 
+            whatsapp, или переписка с психологом по е-mail – три письма с ответами,
+            соответствуют одной консультации психолога по скайпу.
+          </li>
+          <li>
+            <h3>Экономическая выгода</h3>Консультация психолога онлайн хороший выбор не только из-за высокого
+            уровня конфиденциальности, профессионализма и комфорта, 
+            но и из-за экономических преимуществ, которые предлагаются клиенту
+            Стоимость 1 консультации психолога онлайн 3500 рублей.
+            Цена 1 личной консультации 4000 рублей. Консультации психолога 
+            онлайн стоят меньше по сравнению с личной терапией. Это связано с тем,
+            что вы платите только за время, которое вы проводите с психологом, и в 
+            цену консультации не входят расходы на аренду кабинета.
+          </li>
+        </ul>
       </div>
-      <ul class="occasion__block block__txt"> 
-        <li class="block__txt-txts block__txt-box txt"><span class="consul-title">Анонимность и конфиденциальность</span><span class="consul-txt">Многие люди не ходят к психологу из-за стеснительности и потому что испытывают стыд и тревогу, когда нужно рассказывать о некоторых событиях из своей жизни во время личной встречи. Анонимность онлайн беседы с психологом ослабляет стыд и тревогу, помогает говорить более открыто, не скрывая деталей. Это делает консультацию более эффективной.</span>Консультация психолога по скайпу позволяет сохранить больший уровень конфиденциальности, чем при личной терапии, так как, по вашему желанию, психолог может не видеть вас, а слышать только голос, называть вас по вымышленному имени.</li>
-        <li class="block__txt-txts block__txt-box txt"><span class="consul-title">Качество и профессионализм</span>Через интернет мы можете найти профессионального психолога, который имеет высокий уровень образования, богатый практический опыт и использует современные и эффективные методы работы. Если вы живете в городе, где сложно найти хорошего психолога, консультация онлайн дает возможность получить профессиональную и качественную психологическую помощь.</li>
-        <li class="block__txt-txts block__txt-box txt"><span class="consul-title">Комфорт и удобство</span><span class="consul-txt">Общение с психологом через Интернет предлагает людям наибольшую степень комфорта и удобства. Вы можете консультироваться у психолога в удобное для вас время, и в комфортном для вас месте. Не тратя время на дорогу, без ожидания из любого места России или мира.</span>Выбирайте удобный для себя способ общения с психологом. Это может быть разговор, чат с использованием программы скайп, whatsapp, или переписка с психологом по е-mail – три письма с ответами, соответствуют одной консультации психолога по скайпу.</li>
-        <li class="block__txt-txts block__txt-box txt"><span class="consul-title">Экономическая выгода</span><span class="consul-txt">Консультация психолога онлайн хороший выбор не только из-за высокого уровня конфиденциальности, профессионализма и комфорта, но и из-за экономических преимуществ, которые предлагаются клиенту</span>Стоимость 1 консультации психолога онлайн 3500 рублей.
-          Цена 1 личной консультации 4000 рублей. Консультации психолога онлайн стоят меньше по сравнению с личной терапией. Это связано с тем, что вы платите только за время, которое вы проводите с психологом, и в цену консультации не входят расходы на аренду кабинета.
-        </li>
-      </ul>
     </section>
     <!-- END Advantages-->
     <!-- Reason to apply-->
-    <section class="occasion section__indivConsul">
-      <div class="width advantage advantage__indent">
-        <p class="min-text__text min-text__color advantage__text">Повод обратиться</p>
-        <h2 class="titles advantage__titl text-center">Психолог поможет, если вы чувствуете что:</h2>
+    <section class="occasion">
+      <div class="container">
+        <div class="text-bgc">
+          <p> Повод обратиться</p>
+        </div>
+        <h2>Психолог поможет, если вы чувствуете что:</h2>
+        <ul class="occasion__block"> 
+          <li> <strong>Чувство вины и самокритика </strong>управляют вашими решениями, не дают сказать нет, 
+            нарушают спокойствие, вызывают
+            глубокую тревогу.
+          </li>
+          <li> <strong>Низкая самооценка </strong>создает неуверенность в себе, мешает достигать цели, воплощать 
+            ваши мечты, препятствует серьезным отношениям.
+          </li>
+          <li> <strong>Апатия, отсутствие надежды </strong>начинают подавлять вас. 
+            Жизнь кажется бессмысленной, возникают мысли о смерти.
+          </li>
+          <li> <strong>Боль после расставания </strong>не уменьшается, вы испытываете горечь одиночества,
+            предательства, чувствуете себя
+            непонятым и отвергнутым.
+          </li>
+          <li> <strong>Повторяющиеся неудачи в отношениях</strong>, лишают вас надежды найти спутника жизни.</li>
+          <li> <strong>Стеснение</strong>, робость, стыд, <strong>страх негативной оценки со стороны </strong>вызывают проблемы в общении, портят отношения с людьми, которые вас окружают.</li>
+          <li> <strong>Находитесь в тупике</strong>, не знаете куда двигаться дальше.</li>
+          <li> <strong>Тревога, постоянное беспокойство</strong>, панические состояния, страхи мешают жизни.</li>
+        </ul>
       </div>
-      <ul class="occasion__block block__txt"> 
-        <li class="block__txt-txt txt"> <span class="txt-bold">Чувство вины и самокритика </span>управляют вашими решениями, не дают сказать нет, 
-          нарушают спокойствие, вызывают
-          глубокую тревогу.
-        </li>
-        <li class="block__txt-txt txt"> <span class="txt-bold">Низкая самооценка </span>создает неуверенность в себе, мешает достигать цели, воплощать 
-          ваши мечты, препятствует серьезным отношениям.
-        </li>
-        <li class="block__txt-txt txt"> <span class="txt-bold">Апатия, отсутствие надежды </span>начинают подавлять вас. 
-          Жизнь кажется бессмысленной, возникают мысли о смерти.
-        </li>
-        <li class="block__txt-txt txt"> <span class="txt-bold">Боль после расставания </span>не уменьшается, вы испытываете горечь одиночества,
-          предательства, чувствуете себя
-          непонятым и отвергнутым.
-        </li>
-        <li class="block__txt-txt txt"> <span class="txt-bold">Повторяющиеся неудачи в отношениях</span>, лишают вас надежды найти спутника жизни.</li>
-        <li class="block__txt-txt txt"> <span class="txt-bold">Стеснение</span>, робость, стыд, <span class="txt-bold">страх негативной оценки со стороны </span>вызывают проблемы в общении, портят отношения с людьми, которые вас окружают.</li>
-        <li class="block__txt-txt txt"> <span class="txt-bold">Находитесь в тупике</span>, не знаете куда двигаться дальше.</li>
-        <li class="block__txt-txt txt"> <span class="txt-bold">Тревога, постоянное беспокойство</span>, панические состояния, страхи мешают жизни.</li>
-      </ul>
     </section>
     <!-- END Reason to apply-->
     <!-- SLIDER Reviews about me-->
@@ -182,28 +217,28 @@
     </section>
     <!-- END SLIDER Reviews about me-->
     <!-- Prices for services-->
-    <section class="sectionSeven__indivConsul">
-      <div class="prices prices__indent">
+    <section class="sectionSeven">
+      <div class="container">
         <div class="text-bgc">
           <p>Стоимость</p>
         </div>
-        <h2 class="titles prices__titles">Цены на услуги</h2>
-        <div class="indivConsul__block">
-          <div class="indivConsul__content prices__block">
+        <h2>Цены на услуги</h2>
+        <div class="prices__block">
+          <div class="prices__content">
             <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/imgFive.jpg" alt="Мужчина"></div>
             <div class="text-bgc">
               <p>60 минут</p>
             </div>
             <h3>Индивидуальная консультация</h3>
-            <p>Консультация одного человека, личный приём в кабинете психолога.<strong>Стоимость сеанса:  4 000 руб.</strong></p>
+            <p>Консультация одного человека, личный приём в кабинете психолога.<strong>Стоимость сеанса: 4000 руб.</strong></p>
           </div>
-          <div class="indivConsul__content prices__block">
+          <div class="prices__content">
             <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/adventigeTwo.jpg" alt="Девушка"></div>
             <div class="text-bgc">
               <p>60 минут</p>
             </div>
             <h3>Онлайн консультация</h3>
-            <p>Личная консультация по скайпу. </p><span class="txt txt-bold">Стоимость сеанса:  3 500 руб.</span>
+            <p>Личная консультация по скайпу. <strong>Стоимость сеанса: 3500 руб.</strong></p>
           </div>
         </div>
       </div>
