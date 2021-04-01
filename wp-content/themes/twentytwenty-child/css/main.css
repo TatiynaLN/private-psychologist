@@ -1787,7 +1787,6 @@ i {
   display: block;
   position: fixed;
   visibility: hidden;
-  overflow-x: hidden;
   top: 0;
   left: -100%;
   width: 100%;
