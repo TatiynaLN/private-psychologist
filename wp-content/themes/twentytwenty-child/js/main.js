@@ -3,7 +3,7 @@
 ;
 
 (function () {
-  var panel = document.querySelector('html');
+  var panel = document.querySelector('body');
   document.querySelector('.menu__btn').addEventListener('click', function (e) {
     panel.classList.toggle('ns');
   });
@@ -137,10 +137,10 @@ function $modal(options) {
   var modal1 = $modal({
     content: '<h5>Перезвонить вам?</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>\
         <form>\
-            <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-        <button> <span>Перезвонить мне</span></button>\
+            <input class="_req phone-input" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+        <button class="btn-send">Перезвонить мне</button>\
         <div class="form__policy">\
-                    <input id="modal__chec1" type="checkbox" checked="">\
+                    <input class="_req" id="modal__chec1" type="checkbox" checked="">\
                     <label for="modal__chec1"> Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a></label>\
                   </div></form>'
@@ -149,11 +149,11 @@ function $modal(options) {
   var modal2 = $modal({
     content: '<h5>Запись на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
         <form><div class="input-flex">\
-                    <input type="text" name="name" placeholder="Ваше имя" required="required">\
-                    <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-                    </div><button><span>Записаться на приём</span></button>\
+                    <input class="_req" type="text" name="user-name" placeholder="Ваше имя" required="required">\
+                    <input class="_req phone-input" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+                    </div><button class="btn-send">Записаться на приём</button>\
                   <div class="form__policy">\
-                    <input id="modal__chec2" type="checkbox" checked="">\
+                    <input class="_req" id="modal__chec2" type="checkbox" checked="">\
                     <label for="modal__chec2"> \
                             Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a>\
@@ -164,12 +164,12 @@ function $modal(options) {
   var modal3 = $modal({
     content: '<h5>Записаться на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
         <form><div class="input-flex">\
-                    <input type="text" name="name" placeholder="Ваше имя" required="required">\
-                    <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-                    </div><button><span>Записаться на приём</span></button>\
+                    <input class="_req" type="text" name="user-name" placeholder="Ваше имя" required="required">\
+                    <input class="_req phone-input" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+                    </div><button class="btn-send">Записаться на приём</button>\
                   </form>\
                   <div class="form__policy">\
-                    <input id="modal__chec3" type="checkbox" checked="">\
+                    <input class="_req" id="modal__chec3" type="checkbox" checked="">\
                     <label for="modal__chec3"> \
                                         Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a>\
@@ -180,11 +180,11 @@ function $modal(options) {
   var modal4 = $modal({
     content: '<h5>Связаться с психологом</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
         <form><div class="input-flex">\
-            <input type="text" name="name" placeholder="Ваше имя" required="required">\
-                    <input type ="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-                    </div><button><span>Записаться на приём</span></button>\
+            <input class="_req" type="text" name="user-name" placeholder="Ваше имя" required="required">\
+                    <input class="_req phone-input" type ="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
+                    </div><button class="btn-send">Записаться на приём</button>\
         <div class="form__policy">\
-                    <input id="modal__chec4" type="checkbox" checked="">\
+                    <input class="_req" id="modal__chec4" type="checkbox" checked="">\
                     <label for="modal__chec4"> \
                 Вы соглашаетесь с \
                     <a target="_blank" href="#!">условиями обработки персональных данных</a>\
@@ -215,7 +215,7 @@ function $modal(options) {
     }
   });
   var btns = document.querySelectorAll('.btn');
-  var panel = document.getElementsByTagName('html')[0];
+  var panel = document.getElementsByTagName('body')[0];
   btns.forEach(function (btn) {
     btn.addEventListener('click', function () {
       panel.classList.add('oh');

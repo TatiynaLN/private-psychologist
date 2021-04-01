@@ -28,6 +28,11 @@
         <div class="adress__mn addres"><a href="contacts.html#map">пр. Ленина, д.45, оф. 15</a>
           <p>Москва, м. Московская</p>
         </div>
+        <ul class="social">
+          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube"></a></li>
+          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram"></a></li>
+          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk"></a></li>
+        </ul>
         <button class="btn show-modal-1 btn-mn" data-toggle="modal-1">Обратный звонок </button>
       </div>
       <!-- hamburger HEADER-->
@@ -80,12 +85,12 @@
             <h5 class="form__title">Запись на приём</h5>
             <p>Заполните форму и я перезвоню вам для уточнения удобного для вас времени</p>
             <div class="box-input">
-              <input type="text" name="name" placeholder="Ваше имя" required="required">
-              <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">
-              <button>Запись на консультацию</button>
+              <input class="_req" type="text" name="user-name" placeholder="Ваше имя" required="required">
+              <input class="_req phone-input" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">
+              <button class="btn-send">Запись на консультацию</button>
             </div>
             <div class="form__policy">
-              <input id="form1" type="checkbox" checked="">
+              <input class="_req" id="form1" type="checkbox" checked="">
               <label for="form1">Вы соглашаетесь с <a href="#!" target="_blank">условиями обработки персональных данных</a></label>
             </div>
           </form>
@@ -449,12 +454,12 @@
             <h5 class="form__title">Запись на приём</h5>
             <p>Заполните форму и я перезвоню вам для уточнения удобного для вас времени</p>
             <div class="box-input">
-              <input type="text" name="name" placeholder="Ваше имя" required="required">
-              <input type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">
-              <button>Запись на консультацию</button>
+              <input class="_req" type="text" name="user-name" placeholder="Ваше имя" required="required">
+              <input class="_req phone-input" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">
+              <button class="btn-send">Запись на консультацию</button>
             </div>
             <div class="form__policy">
-              <input id="form2" type="checkbox" checked="">
+              <input class="_req" id="form2" type="checkbox" checked="">
               <label for="form2">Вы соглашаетесь с <a href="#!" target="_blank">условиями обработки персональных данных</a></label>
             </div>
           </form>
@@ -472,31 +477,37 @@
         <div class="blog-slider swiper-container">
           <div class="swiper-wrapper reviews__swiper-wrapper">
             <div class="swiper-slide swiper__blog">
-              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/imgFive.jpg" alt="Мужчина"></div>
+              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/imgFive.jpg" alt="Мужчина">
+                <div class="blog__btn"><a href="blog-page.html"><span>Читать далее</span></a></div>
+              </div>
               <div class="text-bgc">
                 <p>О приёме</p>
               </div>
               <h3>Как проходят консультации психолога</h3>
               <p>
-                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p><a href="blog-page.html"><span>Читать далее</span></a>
+                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p>
             </div>
             <div class="swiper-slide swiper__blog">
-              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/adventigeFour.jpg" alt="Консультация"></div>
+              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/adventigeFour.jpg" alt="Консультация">
+                <div class="blog__btn"><a href="blog-page.html"><span>Читать далее</span></a></div>
+              </div>
               <div class="text-bgc">
                 <p>Психотерапия</p>
               </div>
               <h3>Что такое нарративная, терапия нарративный подход</h3>
               <p>
-                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p><a href="blog-page.html"><span>Читать далее</span></a>
+                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p>
             </div>
             <div class="swiper-slide swiper__blog">
-              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/adventigeTwo.jpg" alt="Девушка"></div>
+              <div class="picture"><img src="wp-content/themes/twentytwenty-child/img/adventigeTwo.jpg" alt="Девушка">
+                <div class="blog__btn"><a href="blog-page.html"><span>Читать далее</span></a></div>
+              </div>
               <div class="text-bgc">
                 <p>Детская психология</p>
               </div>
               <h3>Как помочь ребенку преодолеть капризы и истерики</h3>
               <p>
-                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p><a href="blog-page.html"><span>Читать далее</span></a>
+                Психолог создает опоры, чтобы человек мог пройти путь от знакомого и известного - переживания проблемы,к новому - знаниям о решении проблемы.</p>
             </div>
           </div>
         </div><a href="blog.html"> <span>Смотреть все статьи</span></a>
@@ -506,6 +517,14 @@
     <!-- footer-->
     <footer class="footer">
       <div class="container">
+        <ul class="menu__list-footer">
+          <li><a href="about-me.html">Обо мне</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="price.html">Цены</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
         <div class="footer__top-content">
           <ul class="footer__menu-list">
             <li><a href="family-psych.html">Семейная консультация</a></li>
@@ -518,20 +537,12 @@
           </div>
           <button class="btn show-modal-1" data-toggle="modal-1">Обратный звонок </button>
         </div>
-        <ul class="menu__list-footer">
-          <li><a href="about-me.html">Обо мне</a></li>
-          <li><a href="services.html">Услуги</a></li>
-          <li><a href="price.html">Цены</a></li>
-          <li><a href="reviews.html">Отзывы</a></li>
-          <li><a href="blog.html">Блог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="social">
-          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube"></a></li>
-          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram"></a></li>
-          <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk"></a></li>
-        </ul>
-        <div class="policy__footer">
+        <div class="footer-footer">
+          <ul class="social">
+            <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/youtube.svg" alt="youtube"></a></li>
+            <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/instagram.svg" alt="instagram"></a></li>
+            <li><a href="#" target="_blank"><img src="wp-content/themes/twentytwenty-child/img/icons/vk.svg" alt="vk"></a></li>
+          </ul>
           <p><a href="" target="_blank">Политика конфиденциальности сайта</a></p>
           <p><a href="" target="_blank">Разработка сайта</a></p>
         </div>
