@@ -186,14 +186,51 @@ label {
   opacity: 1;
 }
 
+.html-overflow {
+  overflow-y: scroll;
+}
+
 .fslightbox-open,
 .ns,
 .oh {
   width: 100vw;
   height: 100%;
   margin: 0;
-  padding-right: 15px;
+  padding-right: 17px;
   overflow: hidden;
+}
+
+.fslightbox-open .logo,
+.ns .logo,
+.oh .logo {
+  padding-right: 17px;
+}
+
+.fslightbox-open .header__fix,
+.ns .header__fix,
+.oh .header__fix {
+  padding-right: 17px;
+}
+
+.alignright {
+  float: right;
+  margin: 0.5em 0 0.5em 1em;
+}
+
+.alignleft {
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignnone {
+  height: auto;
+  max-width: 100%;
 }
 
 /* MIXINS & VARIABLES */
@@ -216,11 +253,11 @@ label {
 
 .header__fix {
   position: absolute;
-  width: 100%;
 }
 
 .header {
   width: 100%;
+  max-width: 175.5rem;
   z-index: 3;
   overflow: hidden;
 }
@@ -1801,6 +1838,13 @@ i {
   padding: 7.7rem 0 5.7rem 0;
 }
 
+.hamburger__menu-box .social {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* элементы меню */
 
 #menu__toggle:checked ~ .hamburger__menu-box {
@@ -2470,10 +2514,8 @@ h3 {
   opacity: 0;
   height: 0;
   padding: 1rem 2rem 2rem 2rem;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
   -webkit-overflow-scrolling: touch;
   -moz-overflow-scrolling: touch;
   -ms-overflow-scrolling: touch;
@@ -2482,6 +2524,13 @@ h3 {
 
 .accordion-item .accordion-child::-webkit-scrollbar {
   -webkit-appearance: none;
+}
+
+.accordion-item .accordion-child p {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
 }
 
 .accordion-item input[type="checkbox"]:checked ~ .accordion-child {
@@ -2495,12 +2544,17 @@ h3 {
   box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112), 0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
   height: 19.3rem;
   opacity: 1;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
   visibility: visible;
   overflow: auto;
+}
+
+.accordion-item input[type="checkbox"]:checked ~ .accordion-child p {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .article {

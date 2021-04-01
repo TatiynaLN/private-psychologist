@@ -3,7 +3,7 @@
 ;
 
 (function () {
-  var panel = document.querySelector('body');
+  var panel = document.querySelector('html');
   document.querySelector('.menu__btn').addEventListener('click', function (e) {
     panel.classList.toggle('ns');
   });
